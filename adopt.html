@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Adopt a Pet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Available Pets</a></li>
+                <li><a href="adopt.html">Adopt a Pet</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="adopt-form">
+            <h2>Adopt a Pet Today!</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="pet">Pet You're Interested In:</label>
+                <select id="pet" name="pet" required>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                </select>
+                
+                <label for="message">Message to Us:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pet Adoption Center</p>
+    </footer>
+</body>
+</html>
